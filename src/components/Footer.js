@@ -13,7 +13,7 @@ function Footer() {
                             <li><a href="#slider" className="text-white text-decoration-none fs-6">Slider</a></li>
                             <li><a href="#gallery" className="text-white text-decoration-none fs-6">Galería</a></li>
                             <li><a href="#forum" className="text-white text-decoration-none fs-6">Foro</a></li>
-                            <li><a href="#" className="text-white text-decoration-none fs-6">Contacto</a></li>
+                            <li><a href="#contacto" className="text-white text-decoration-none fs-6">Contacto</a></li>
                         </ul>
                     </div>
 

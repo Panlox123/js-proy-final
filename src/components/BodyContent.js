@@ -3,15 +3,18 @@ import Hero from './body/Hero.js'
 import Slider from './body/Slider.js';
 import Gallery from './body/Gallery.js';
 import Forum from './body/Forum.js';
-function Navbar() {
+import Contactos from './body/Contactos.js';
+
+function BodyContent() {
     return (
         <>
-        <Hero/>
-        <Slider/>
-        <Gallery/>
-        <Forum/>
+            <Hero/>
+            <Slider/>
+            <Gallery/>
+            <Forum/>
+            <Contactos />
         </>
     );
 }
 
-export default Navbar;
+export default BodyContent;

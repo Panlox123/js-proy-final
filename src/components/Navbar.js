@@ -26,7 +26,7 @@ function Navbar() {
                 <a className="nav-link fs-4 text-white" href="#forum">Foro</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link fs-4 text-white" href="#">Contacto</a>
+                <a className="nav-link fs-4 text-white" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>

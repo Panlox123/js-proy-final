@@ -1,18 +1,17 @@
-import Navbar from "./components/Navbar";
-import BodyContent from "./components/BodyContent"
-import Footer from "./components/Footer"
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { AuthProvider } from "./context/AuthContext";
+import RouteConfig from './routes/route.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+const App = () => {
   return (
-    <>
-    <Navbar/>
-    <BodyContent/>
-    <Footer/>
-    </>
-    
-  
+    <AuthProvider>
+      <BrowserRouter>
+        <RouteConfig />
+      </BrowserRouter>
+    </AuthProvider>
   );
-}
+};
 
 export default App;
