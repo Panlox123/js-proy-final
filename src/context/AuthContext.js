@@ -14,8 +14,11 @@ export const AuthProvider = ({ children }) => {
   // Función para autenticar usuarios
   const loginUser = (username, password) => {
     const user = users.find(user => user.username === username && user.password === password);
-    if (user) setCurrentUser(user);
-    return user;
+    if (user) {
+      setCurrentUser(user); // Se actualiza el usuario autenticado
+      return user;
+    }
+    return null;
   };
 
   // Función para verificar si un usuario está autenticado
@@ -27,7 +30,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ users, registerUser, loginUser, isAuthenticated, logout }}>
+    <AuthContext.Provider value={{ users, registerUser, loginUser, isAuthenticated, logout, currentUser }}>
       {children}
     </AuthContext.Provider>
   );

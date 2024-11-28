@@ -33,7 +33,7 @@ const LoginForm = () => {
     
         const user = loginUser(usuario, contraseña);
         if (user) {
-          alert(`Bienvenido, ${user.firstName} ${user.lastName}!`);
+          alert(`¡Bienvenido, usuario "${user.username}"!`);
           navigate("/home");
         } else {
           setError("Usuario o contraseña incorrectos. Por favor, regístrate primero.");

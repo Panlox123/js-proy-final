@@ -45,7 +45,12 @@ const RegisterForm = () => {
   
       // Llamada para registrar al usuario en el contexto
       registerUser(newUser);
-  
+
+      if (newUser) {
+        alert(`El usuario ${newUser.username} ha sido registrado exitosamente!`);
+      } else {
+        setError("Hubo un problema al registrar el usuario.");
+      }
       // Redirige al login después de registrar exitosamente
       navigate("/");
   
@@ -54,8 +59,6 @@ const RegisterForm = () => {
       setError("Hubo un problema al registrar el usuario.");
     }
   };
-  
-  
 
   return (
     <div className="register-wrapper">
@@ -114,6 +117,8 @@ const RegisterForm = () => {
               <input
                 type="number"
                 name="age"
+                min={0}
+                max={100}
                 placeholder="Edad"
                 value={formData.age}
                 onChange={handleChange}
