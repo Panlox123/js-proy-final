@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';  // Asegúrate de incluir el JS de Bootstrap
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
@@ -63,6 +64,7 @@ function Navbar() {
 }
 
 export default Navbar;
+
 
 
   
